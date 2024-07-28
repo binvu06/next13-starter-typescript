@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar } from "react-bootstrap";
 
-import NavBarComponent from "@/components/NavBar";
+import NavBarComponent from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });

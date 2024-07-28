@@ -1,15 +1,21 @@
 "use client";
 import Link from "next/link";
 
+import { useEffect, useMemo } from "react";
+
 import styles from "@/styles/app.module.css";
-import { useEffect } from "react";
+
 import TableComponent from "@/components/Table";
 
 export default function Home() {
    useEffect(() => {
-      console.log(styles);
-   });
-   // console.log(styles);
+      (async function fetchData() {
+         const res = await fetch("http://localhost:8000/blogs");
+
+         const data = await res.json();
+         console.log(data);
+      })();
+   }, []);
 
    return (
       <div>

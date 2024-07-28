@@ -3,7 +3,6 @@ import React from "react";
 type Props = {};
 
 const Footer = (props: Props) => {
-   console.log("hello");
    return (
       <div
          style={{
